@@ -56,6 +56,5 @@ h1::before {
 
 /* THE ANIMATION (REFINED) */
 @keyframes typewriter {
-    to {left: 100%;}
+  to { left: 100%; }
 }
-
