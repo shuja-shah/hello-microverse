@@ -35,21 +35,3 @@ h1{
     margin-top: 25%;
     text-align: center;
 }
-/*PESUDO CLASSES FOR ANIMATION*/
-h1::before,
-h1::after{
-    content: '';
-    position:absolute;
-    top:0%;
-    left:0%;
-    bottom:0%;
-    right:0%;
-}
-h1::before{
-    background: hsl(var(--clr-dark));
-    animation: typewriter 3s steps(17) infinite;
-}
-/*THE ANIMATION*/
-@keyframes typewriter {
-    to {left: 100%;}
-}
