@@ -1,37 +1,60 @@
-/*UTILITY CLASSES*/
+/* UTILITY CLASSES */
 
 :root {
-    /* colors */
-    --clr-dark: 230 35% 7%;
-    --clr-light: 231 77% 90%;
-    --clr-white: 0 0% 100%;
-    --clr-gold: 235 216% 212%;
-    --clr-RoseGold: 351 34% 57%;
-    --clr-White-Gold: 31 25% 65%;
-    --clr-vintage-Red:4 66% 28%;
-    --clr-wood-Brown:42 37% 41%;
-    --clr-green:145, 63%, 49%;
-    
-    /* font-sizes */
-    --fs-900: 9.375rem;
-    --fs-800: 6.25rem;
-    --fs-700: 3.5rem;
-    --fs-600: 2rem;
-    --fs-500: 1.75rem;
-    --fs-400: 1.125rem;
-    --fs-300: 1rem;
-    --fs-200: 0.875rem;
+  /* colors */
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+  --clr-gold: 235 216% 212%;
+  --clr-RoseGold: 351 34% 57%;
+  --clr-White-Gold: 31 25% 65%;
+  --clr-vintage-Red: 4 66% 28%;
+  --clr-wood-Brown: 42 37% 41%;
+  --clr-green: 145, 63%, 49%;
+
+  /* font-sizes */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
 }
-/*DEFAULT*/
-body{
-    background-color: hsl(var(--clr-dark));
+
+/* DEFAULT */
+body {
+  background-color: hsl(var(--clr-dark));
 }
-h1{
-    color:hsl(var(--clr-light));
-    font-size: var(--fs-700);
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight:500;
-    letter-spacing: 5px;
-    margin-top: 25%;
-    text-align: center;
+
+h1 {
+  color: hsl(var(--clr-light));
+  font-size: var(--fs-700);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  margin-top: 25%;
+  text-align: center;
+}
+
+/* PESUDO CLASSES FOR ANIMATION */
+h1::before,
+h1::after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+}
+
+h1::before {
+  background: hsl(var(--clr-dark));
+  animation: typewriter 3s steps(17) infinite;
+}
+
+/* THE ANIMATION (REFINED) */
+@keyframes typewriter {
+  to { left: 100%; }
 }
