@@ -49,7 +49,7 @@ h1::before{
     background: hsl(var(--clr-dark));
     animation: typewriter 3s steps(17) infinite;
 }
-/*THE ANIMATION*/
+/*THE ANIMATION (REFINED)*/
 @keyframes typewriter {
     to {left: 100%;}
 }
